@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Report } from 'src/app/report';
+import { Report, SubjectResult } from 'src/app/report';
 import { ReportService } from 'src/app/report.service';
 
 
@@ -12,6 +12,7 @@ import { ReportService } from 'src/app/report.service';
 export class DashboardComponent implements OnInit {
 
    reports!: Report;
+   
 
   constructor(private _reportService: ReportService) {
     
